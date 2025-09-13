@@ -1,0 +1,102 @@
+@import "../../public/root.css";
+
+a{
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+
+    background-color: var(--color1);
+    color: white;
+
+    padding: 1% 2%;
+
+    border-radius: 2vw;
+    border: 3px var(--color1) solid;
+
+    font-size: 1vw;
+
+    transition: .1s;
+} a:hover{
+    background-color: var(--color3);
+    color: black;
+    border-color: black;
+}
+
+.main{
+    border: 5px gray solid;
+    border-radius: 2vw;
+
+    background-color: var(--color1);
+
+    width: 80vh;
+    height: 80vh;
+
+    display: grid;
+    grid-template-rows: 75% 1fr;
+    row-gap: 5%;
+
+    padding: 2%;
+}
+
+#canvas{
+    background-color: var(--color3);
+
+    border-radius: 2vw;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    padding: 2%;
+}
+
+#canvas .cell{
+    background-color: black;
+    border-radius: 1vw;
+}
+
+.outputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+}
+
+.outputs .errors{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 45%;
+    height: 75%;
+    gap: 5%;
+}
+
+.outputs .errors .errorCell{
+    background-color: var(--color2);
+
+    flex: 1;
+    height: 100%;
+
+    border: var(--color1) 5px solid;
+    border-radius: 1vw;
+}
+
+.outputs #timer{
+    background-color: var(--color3);
+
+    width: 10vw;
+
+    text-align: center;
+    padding: 2% 0;
+    font-size: 2vw;
+    font-weight: bolder;
+    letter-spacing: .1vw;
+
+    color: white;
+    -webkit-text-stroke: black 2px;
+
+    border: var(--color1) 5px solid;
+    border-radius: 2vw;
+}

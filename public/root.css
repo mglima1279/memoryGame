@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comfortaa:wght@300..700&family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: rgb(28, 28, 28);
+    --color2: rgb(218, 221, 216);
+    --color3: rgb(238, 240, 242);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Comfortaa", sans-serif;
+
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+body{
+    background-color: var(--color3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+}
